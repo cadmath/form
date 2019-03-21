@@ -1,10 +1,5 @@
 ﻿<?php
 
-/*$spec = array(
-'~','`','"','№',';',':','?','&','@','!', '#','$','^',
-'*','(',')','-','=','+','/','<','>','|','{','}','[',']'
-);*/
-
 $name = trim(htmlspecialchars($_POST['name']));
 $value = trim(htmlspecialchars($_POST['value']));
 
@@ -23,7 +18,7 @@ function validevar($name, $value){
 			$result = $name.' : '.$value;
 		}
 	}else{
-		$result = 'Проверте все ли поля были заполненны';
+		$result = 'Проверьте, все ли поля были заполнены';
 	}
 	
 	echo $result;
